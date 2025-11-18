@@ -70,8 +70,8 @@ function getValue(obj: Person, key: keyof Person) {
   return obj[key];
 }
 
-const person: Person = { name: "Kausar", age: 20, email: "kausar@example.com" };
-console.log(getValue(person, "email")); // Output: "kausar@example.com"
+const person: Person = { name: "Kausar", age: 20, email: "@example.com" };
+console.log(getValue(person, "email")); // Output: "@example.com"
 
 3️⃣ Difference between any, unknown, and never
 
@@ -141,8 +141,8 @@ Union (|): Variable একাধিক type নিতে পারে।
 
 type ID = number | string;
 let userId: ID;
-userId = 123;    // ✅
-userId = "ABC";  // ✅
+userId = 123;   
+userId = "ABC"; 
 
 
 Intersection (&): দুই বা তার বেশি type combine করে নতুন type তৈরি হয়।
